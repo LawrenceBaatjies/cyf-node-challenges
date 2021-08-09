@@ -23,8 +23,8 @@ app.get("/quotes", (request, response) => {
   response.json(quotes);
 });
 
-app.get("/quotes/random", (req, res) => {
-  res.send(pickFromArray(quotes))
+app.get("/quotes/random", (request, response) => {
+  response.send(pickFromArray(quotes))
 });
 
 
